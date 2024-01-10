@@ -94,7 +94,8 @@ copyConfig () {
 
   # Configuration of the API Server
   cp config/api.config.local.json $EXPLORER_SRC/api/src/data/config.local.json
-
+  # mkae directory
+  mkdir -p $EXPLORER_SRC/client/src/assets/config
   # Configuration of the Web App
   cp config/webapp.config.local.json $EXPLORER_SRC/client/src/assets/config/config.local.json
 
